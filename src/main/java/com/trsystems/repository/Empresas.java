@@ -3,6 +3,7 @@ package com.trsystems.repository;
 import java.io.Serializable;
 import java.util.List;
 
+import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 
@@ -11,6 +12,7 @@ import com.trsystems.model.Empresa;
 public class Empresas implements Serializable {
 	private static final long serialVersionUID = 8878011262914507122L;
 
+	@Inject
 	private EntityManager manager;
 
 	public Empresas() {
